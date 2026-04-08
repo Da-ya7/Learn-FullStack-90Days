@@ -182,9 +182,8 @@ Feel free to **fork this repo** and follow along! Each day's `README.md` explain
 
 ## 📞 Get in Touch
 
-- 🐦 Twitter: [@yourhandle](https://twitter.com)
-- 💼 LinkedIn: [Your Profile](https://linkedin.com)
-- 📧 Email: your.email@example.com
+
+- 📧 Email: murugesandhayalan609@gmail.com
 
 ---
 
