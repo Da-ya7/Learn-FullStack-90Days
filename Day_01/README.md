@@ -31,6 +31,39 @@ The goal is not just to run code, but to understand the role each layer plays in
 | [practice.sql](practice.sql) | SQL practice for database creation and connection checks |
 | [README.md](README.md) | Day 1 notes, explanations, and learning summary |
 
+🐍 Python
+Step 1 — Install Python
+Go to python.org → Downloads → Python 3.11 or newer.
+
+⚠️ During installation, tick "Add Python to PATH" — this is critical!
+
+Verify installation in your terminal:
+bashpython --version
+# Expected: Python 3.11.x
+
+Step 2 — Install VS Code
+Download from code.visualstudio.com.
+After installing, open it and install the Python extension from the Extensions sidebar.
+
+Step 3 — Your First Python Script.
+
+🗄️ SQL
+Step 1 — Install MySQL 8 + Workbench
+
+Download MySQL Community Server 8 from dev.mysql.com/downloads/mysql
+Also download MySQL Workbench — your visual interface for writing SQL
+During install, set a root password — remember it!
+
+
+Step 2 — Your First SQL Commands
+Open MySQL Workbench, connect to your local server, and run:
+
+🎨 HTML
+Your First HTML File
+Create a file called index.html and type this out (don't copy-paste — typing helps it sink in):
+
+Save the file → right-click → Open with → your browser.
+
 ## Visual Snapshot
 
 ```html
@@ -114,11 +147,6 @@ By the end of Day 1, the setup should support three things:
 - [ ] MySQL database creation works locally
 - [ ] The active database can be confirmed with `SELECT DATABASE();`
 
-## Suggested Screenshot Section
-
-If you want this README to look even more polished on GitHub, add a screenshot later and replace the placeholder below:
-
-![Day 1 preview](https://via.placeholder.com/1200x520.png?text=Day+01+Preview)
 
 ## Next Day
 
