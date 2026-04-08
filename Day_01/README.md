@@ -1,14 +1,4 @@
-# Day 01 - First Steps With HTML, Python, and SQL
 
-[![Day 01](https://img.shields.io/badge/Day-01-0f766e?style=for-the-badge)](https://github.com/)
-[![HTML](https://img.shields.io/badge/HTML-5-e34f26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![Python](https://img.shields.io/badge/Python-3.13%2B-3776ab?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![MySQL](https://img.shields.io/badge/MySQL-8.0-4479a1?style=for-the-badge&logo=mysql&logoColor=white)](https://dev.mysql.com/)
-[![Status](https://img.shields.io/badge/Status-Active_Learning-f59e0b?style=for-the-badge)]()
-
-> Day 1 of the 90-day journey. This folder captures the first working examples of HTML, Python, and SQL, written as a clean reference for future practice and revision.
-
-![Learning Banner](https://img.shields.io/badge/Full--Stack%20Journey-Day%2001-111827?style=flat-square&labelColor=111827)
 # Day 01 - First Steps With HTML, Python, and SQL
 
 [![Day 01](https://img.shields.io/badge/Day-01-0f766e?style=for-the-badge)](https://github.com/)
