@@ -14,7 +14,9 @@
 
 ## Overview
 
+
 This day is focused on the fundamentals:
+
 
 - Writing a basic HTML page with headings and metadata
 - Practicing Python variables, printing, arithmetic, and simple calculations
@@ -24,45 +26,13 @@ The goal is not just to run code, but to understand the role each layer plays in
 
 ## What’s In This Folder
 
+
 | File | Purpose |
 |------|---------|
 | [index.html](index.html) | First HTML page with headings for frontend learning |
 | [practice.py](practice.py) | Python practice covering variables, arithmetic, and small exercises |
 | [practice.sql](practice.sql) | SQL practice for database creation and connection checks |
 | [README.md](README.md) | Day 1 notes, explanations, and learning summary |
-
-🐍 Python
-Step 1 — Install Python
-Go to python.org → Downloads → Python 3.11 or newer.
-
-⚠️ During installation, tick "Add Python to PATH" — this is critical!
-
-Verify installation in your terminal:
-bashpython --version
-# Expected: Python 3.11.x
-
-Step 2 — Install VS Code
-Download from code.visualstudio.com.
-After installing, open it and install the Python extension from the Extensions sidebar.
-
-Step 3 — Your First Python Script.
-
-🗄️ SQL
-Step 1 — Install MySQL 8 + Workbench
-
-Download MySQL Community Server 8 from dev.mysql.com/downloads/mysql
-Also download MySQL Workbench — your visual interface for writing SQL
-During install, set a root password — remember it!
-
-
-Step 2 — Your First SQL Commands
-Open MySQL Workbench, connect to your local server, and run:
-
-🎨 HTML
-Your First HTML File
-Create a file called index.html and type this out (don't copy-paste — typing helps it sink in):
-
-Save the file → right-click → Open with → your browser.
 
 ## Visual Snapshot
 
@@ -146,7 +116,6 @@ By the end of Day 1, the setup should support three things:
 - [ ] Variables, print statements, and arithmetic are understood
 - [ ] MySQL database creation works locally
 - [ ] The active database can be confirmed with `SELECT DATABASE();`
-
 
 ## Next Day
 
