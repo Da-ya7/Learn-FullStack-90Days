@@ -84,4 +84,4 @@ Feel free to **fork this repo** and follow along! Each day's `README.md` explain
 
 ---
 
-*Started: [Add your start date] | Target: 8–12 LPA Python Backend role*
+*Started: [08-04-2026]*
