@@ -64,4 +64,4 @@ print(f"Your name is {name} and your approximate age is {age}")
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------
 
-"""End of Day1 python ...Be consistent one day you will become what you want"""
+"""End of Day2 python ...Be consistent one day you will become what you want"""
