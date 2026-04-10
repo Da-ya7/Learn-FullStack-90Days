@@ -864,3 +864,6 @@ You've learned foundational concepts in each layer: HTML structure, Python varia
 ---
 
 **Happy coding! 🚀 See you on Day 2!**
+## Next Day
+
+Continue to [Day 02](../Day_02/README.md) for the next step in the learning path.
