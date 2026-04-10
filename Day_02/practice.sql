@@ -41,16 +41,16 @@ SELECT name,crew_name from characters; --to select specific column
 
 SELECT * FROM characters WHERE age > 20; -- Get only rows that match a condition (WHERE)
 
-SELECT * FROM students WHERE name = 'Luffy'; --Get a specific person
+SELECT * FROM characters WHERE name = 'Luffy'; --Get a specific person
 
 /*reading SELECT statements
-Read SQL like English: SELECT name, age FROM students WHERE age > 20 = "Give me the name and age FROM the students table WHERE age is greater than 20."*/
+Read SQL like English: SELECT name, age FROM characters WHERE age > 20 = "Give me the name and age FROM the characters table WHERE age is greater than 20."*/
 
 /*NULL vs empty string
 This is a concept beginners often miss. NULL means "no value at all — the data is missing". An empty string "" means "the value exists, but it's blank".*/
 
 -- Insert a row where crew_name is missing (NULL)
-INSERT INTO students (name, age, crew_name)
+INSERT INTO characters (name, age, crew_name)
 VALUES ('Garp',72,NULL);
 
 
