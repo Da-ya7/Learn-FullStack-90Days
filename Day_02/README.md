@@ -256,3 +256,6 @@ Day 2 teaches one powerful idea:
 - Correct type gives correct output
 
 Keep practicing daily. Small steps every day build strong full-stack skills.
+## Next Day
+
+Continue to [Day 03](../Day_03/README.md).
