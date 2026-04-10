@@ -1208,3 +1208,8 @@ You're now ready for Day 03, where you'll learn to modify data (UPDATE, DELETE) 
 **Last Updated**: April 10, 2026  
 **Status**: Complete & Ready to Learn  
 **Next Step**: Review each practice file, run the code, modify it, and predict the output before running it again.
+
+Keep practicing daily. Small steps every day build strong full-stack skills.
+## Next Day
+
+Continue to [Day 03](../Day_03/README.md).
