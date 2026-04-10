@@ -1,70 +1,93 @@
-# Day 02 - Learn By Teaching: Data Types, Input, and SQL Basics
+# Day 02 - HTML, Python, SQL (Learn + Teach)
 
-[![Day 02](https://img.shields.io/badge/Day-02-0f766e?style=for-the-badge)](https://github.com/)
+[![Day 01](https://img.shields.io/badge/Day-01-0f766e?style=for-the-badge)](https://github.com/)
 [![HTML](https://img.shields.io/badge/HTML-5-e34f26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![Python](https://img.shields.io/badge/Python-3.13%2B-3776ab?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![MySQL](https://img.shields.io/badge/MySQL-8.0-4479a1?style=for-the-badge&logo=mysql&logoColor=white)](https://dev.mysql.com/)
 [![Status](https://img.shields.io/badge/Status-Active_Learning-f59e0b?style=for-the-badge)]()
 
-> Day 2 is written like a mini classroom. It explains what to run, why it works, and what mistakes beginners should avoid.
+![Learning Banner](https://img.shields.io/badge/Full--Stack%20Journey-Day%2001-111827?style=flat-square&labelColor=111827)
+This Day 2 folder is for beginners who want to understand three core ideas:
 
----
+1. How HTML text tags format and structure content
+2. How Python data types and input conversion work
+3. How SQL tables, inserts, and select queries work
 
-## Lesson Goals
+If you can explain this README to a friend, you have learned Day 2 well.
 
-By the end of this lesson, students should be able to:
+## Files In Day 2
 
-1. Identify Python data types using `type()`
-2. Convert values between `str`, `int`, and `float`
-3. Explain why `input()` causes type-related bugs
-4. Create and query a SQL table using `CREATE`, `INSERT`, and `SELECT`
-5. Use basic HTML text tags with meaning (`strong`, `em`, `sup`, `sub`)
+- `index.html` -> HTML headings, paragraphs, text formatting tags, quote, image
+- `practice.py` -> Python data types, type conversion, user input
+- `practice.sql` -> SQL data types, table creation, inserts, select queries
 
-## What Is In This Folder
+## 1) HTML - Concept + Code Explanation
 
-| File | What Students Learn |
-|------|----------------------|
-| [index.html](index.html) | Headings, paragraphs, comments, emphasis tags, superscript and subscript |
-| [practice.py](practice.py) | Data types, conversion, user input, and mini age calculator |
-| [practice.sql](practice.sql) | SQL data types, table creation, inserts, selects, filtering, and NULL |
-| [README.md](README.md) | Full Day 2 teaching guide |
+### Main concepts
 
-## Suggested Class Flow (45-60 Minutes)
+- HTML gives structure to a web page
+- Tags can add meaning (`strong`, `em`, `cite`) and not just style
+- Inline styles can change color and alignment
+- `sup` and `sub` help display scientific text like E=MC2 and H2O
 
-1. Run HTML file and observe text formatting
-2. Run Python file and test type conversion behavior
-3. Execute SQL file and inspect query results
-4. Complete the practice tasks in this README
-5. Explain one concept to a friend (peer teaching)
+### Your `index.html` explained
 
-## Part 1: HTML Teaching Notes
+1. `<meta charset="UTF-8">`
+   - Lets the browser show many characters correctly.
 
-The HTML file teaches structure and text meaning:
+2. Heading section:
+   - `<h1>`, `<h2>`, `<h3>` create title hierarchy.
+   - You centered and colored them using inline style.
 
-- `h1`, `h2`, `h3` create heading hierarchy
-- `p` creates paragraphs
-- `hr` separates sections
-- `strong` marks important text
-- `em` marks emphasized text
-- `sup` and `sub` are used for scientific notation (`E = MC²`, `H₂O`)
-- `<!-- comment -->` stores notes for developers only
+3. Paragraph with formatting:
+   - `<strong>` makes text important.
+   - `<em>` adds emphasis.
+   - `<sup>` and `<sub>` display power and chemical notation.
+   - `<mark>` highlights text.
+   - `<del>` and `<ins>` show removed and inserted text.
+   - `<cite>` is used for title/reference style text.
 
-Teaching question for students:
+4. `<blockquote>`
+   - Used for a long quoted/reference statement.
 
-- Why use `strong` instead of only changing font weight with style?
+5. `<img src="..." alt="Luffy">`
+   - Displays an image from URL.
+   - `alt` text is important for accessibility.
 
-## Part 2: Python Teaching Notes
+### What students should learn from this HTML file
 
-### Step A - Data Types
+- Difference between content tags and style
+- How nesting tags changes meaning of text
+- Why clean closing tags matter in HTML
 
-In `practice.py`, students should identify these first:
+## 2) Python - Concept + Code Explanation
 
-- `age = 20` -> `int`
-- `price = 99.99` -> `float`
-- `name = "Dhayalan"` -> `str`
-- `is_active = True` -> `bool`
+File: `practice.py`
 
-Then confirm using:
+### Main concepts
+
+- Python has data types: `int`, `float`, `str`, `bool`
+- `type()` checks the type of a value
+- `input()` always returns a string
+- Type conversion is required for numeric operations
+
+### Code walkthrough
+
+1. Data type examples:
+
+```python
+age = 20
+price = 99.99
+name = "Dhayalan"
+is_active = True
+```
+
+- `age` is integer
+- `price` is decimal number
+- `name` is text
+- `is_active` is boolean
+
+2. Type checking:
 
 ```python
 print(type(age))
@@ -73,135 +96,146 @@ print(type(name))
 print(type(is_active))
 ```
 
-### Step B - Type Conversion
-
-Core rule: Python does not auto-add strings and numbers.
-
-Wrong:
+3. Type conversion examples:
 
 ```python
-"5" + 5
+age_str = "20"
+age_int = int(age_str)
 ```
 
-Correct:
+- Converts string "20" to integer 20.
 
 ```python
-int("5") + 5
+score = 100
+message = "Your score: " + str(score)
 ```
 
-### Step C - Input Handling
-
-`input()` always returns a string.
-
-So for numeric operations:
+- Converts number to string before concatenation.
 
 ```python
-age = int(input("Enter your age: "))
-height = float(input("Enter your height in cm: "))
+y = 9.8
+print(int(y))
 ```
 
-### Step D - Mini Problem
+- `int(9.8)` becomes `9` (decimal part removed, not rounded).
 
-The birth-year problem teaches backend logic:
+4. User input:
 
-1. Take input
-2. Convert to number
-3. Process data
-4. Print result
+```python
+name = input("Enter your name:")
+age = int(input("enter your age:"))
+height = float(input("Enter your height in cm:"))
+```
 
-## Part 3: SQL Teaching Notes
+- Name stays string.
+- Age and height are converted for calculation use.
 
-The SQL file introduces table thinking.
+5. Practice problem logic:
 
-### Concepts students should learn
+- Take name and birth year.
+- Calculate age using current year.
+- Print the result.
 
-- Columns define structure
-- Rows store actual data
-- Data types protect data quality
+### Important note for students
+
+In the final print line, variable name should be consistent:
+
+```python
+print(f"Your name is {your_name} and your approximate age is {age}")
+```
+
+Reason: `your_name` is what you captured from input.
+
+## 3) SQL - Concept + Code Explanation
+
+File: `practice.sql`
+
+### Main concepts
+
+- SQL columns use data types (`INT`, `VARCHAR`, `TEXT`, etc.)
+- `CREATE TABLE` defines structure
+- `INSERT INTO` adds data rows
 - `SELECT` reads data
-- `WHERE` filters data
+- `WHERE` filters rows
+- `NULL` means missing value
 
-### Query Flow To Teach
+### Code walkthrough
 
-1. Select database:
+1. Database selection:
 
 ```sql
 USE onepiece_db;
 ```
 
-2. Create table:
+2. Table creation:
 
 ```sql
-CREATE TABLE characters (
-    name VARCHAR(50),
-    age INT,
-    crew_name TEXT
+CREATE TABLE characters(
+    name varchar(50),
+    age int,
+    crew_name text
 );
 ```
+
+- `name` stores short text.
+- `age` stores whole number.
+- `crew_name` stores text.
 
 3. Insert rows:
 
 ```sql
-INSERT INTO characters (name, age, crew_name)
-VALUES ('luffy', 19, 'Straw_hat');
+INSERT INTO characters (name,age,crew_name)
+VALUES ('luffy',19,'Straw_hat');
 ```
 
-4. Read rows:
+- Adds one character record.
+
+4. Reading data:
 
 ```sql
-SELECT * FROM characters;
-```
-
-5. Filter rows:
-
-```sql
+SELECT * from characters;
+SELECT name,crew_name from characters;
 SELECT * FROM characters WHERE age > 20;
 ```
 
-### Important NULL Concept
+- First query: all columns, all rows.
+- Second query: only selected columns.
+- Third query: rows where condition is true.
 
-- `NULL` means missing value
-- `''` means empty text value
-- Use `IS NULL`, not `= NULL`
+5. NULL check concept:
 
-## Expected Output Check
+```sql
+SELECT * FROM characters WHERE crew_name IS NULL;
+```
 
-Students should be able to show:
+- Use `IS NULL`, not `= NULL`.
 
-1. A browser page with formatted headings and paragraph text
-2. Python output for type checks and input-based responses
-3. SQL query output from `characters` table
+### Important note for students
 
-## Common Beginner Mistakes
+Some lines in your SQL script use table name `students`, but this Day 2 script creates `characters`.
+For consistency, keep one table name while learning.
 
-- Mixing string and number in Python operations
-- Forgetting conversion after `input()`
-- Running queries on wrong table name
-- Using `= NULL` instead of `IS NULL`
-- Incorrectly closed HTML tags
+## Common Beginner Mistakes In Day 2
 
-## Practice Tasks For Fellow Students
+1. Python: mixing string and int without conversion
+2. Python: forgetting that `input()` returns string
+3. SQL: changing table name accidentally (`students` vs `characters`)
+4. SQL: using `= NULL` instead of `IS NULL`
+5. HTML: missing proper closing tags in complex nested lines
 
-1. Python: Ask for weight in kg and print in grams
-2. Python: Ask for two numbers and print sum, difference, product
-3. SQL: Insert 3 more rows into `characters`
-4. SQL: Show only `name` and `crew_name`
-5. HTML: Add one sentence using `strong`, `em`, `sup`, and `sub`
+## Practice For Other Students
 
-## Peer Teaching Challenge
+1. HTML: Add one paragraph using `strong`, `em`, `sup`, and `sub`
+2. Python: Ask user for two numbers and print sum
+3. Python: Ask birth year and print age
+4. SQL: Insert 3 more rows into `characters`
+5. SQL: Show only `name` for age above 20
 
-Explain these without running code:
-
-1. Why does `"10" + "5"` return `"105"`?
-2. Why does SQL need `IS NULL`?
-
-If your friend understands, you have taught Day 2 well.
-
-## Run Instructions
+## Quick Run Guide
 
 ### HTML
 
-Open `index.html` in your browser.
+Open `index.html` in browser.
 
 ### Python
 
@@ -211,41 +245,14 @@ python practice.py
 
 ### SQL
 
-Run `practice.sql` inside MySQL Workbench or MySQL CLI.
+Run `practice.sql` in MySQL Workbench or MySQL CLI.
 
-## File Correction Notes (For Better Teaching)
+## Day 2 Summary
 
-- In `practice.py`, final output line should use `your_name` for consistency.
-- In `practice.sql`, some lines mention `students` while this day creates `characters`.
+Day 2 teaches one powerful idea:
 
-Suggested Python fix:
+- Data has type
+- Type affects behavior
+- Correct type gives correct output
 
-```python
-print(f"Your name is {your_name} and your approximate age is {age}")
-```
-
-Suggested SQL fix style:
-
-```sql
-SELECT * FROM characters WHERE name = 'luffy';
-```
-
-## Day 2 Recap
-
-One big idea connects HTML, Python, and SQL:
-
-- Input has a type
-- Type changes behavior
-- Correct type gives correct result
-
-## Learning Checklist
-
-- [ ] I can explain `int`, `float`, `str`, `bool`
-- [ ] I understand why `input()` returns string
-- [ ] I can convert input safely before calculations
-- [ ] I can create and query a SQL table
-- [ ] I can explain the difference between `NULL` and empty text
-
-## Next Day
-
-Continue to [Day 03](../Day_03/README.md).
+Keep practicing daily. Small steps every day build strong full-stack skills.
